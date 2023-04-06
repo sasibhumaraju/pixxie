@@ -1,0 +1,25 @@
+.light-theme {
+
+   --primary: rgb(42,133,255);  
+   --secondary: rgb(255,255,255);  
+   --territory: rgb(249,249,249);  
+   --primary-text: rgb(0,0,0);  
+   --secondary-text: rgb(171,176,179); 
+   --border:  
+
+}
+
+.dark-theme {
+
+    --primary: rgb(42,133,255);  
+    --secondary: rgb(23,24,28);
+    --territory: rgb(30,31,35); 
+    --primary-text: rgb(255,255,255); 
+    --secondary-text: rgb(167,168,172); 
+    --border: rgb(238,240,239);
+  
+}
+
+body {
+    background-color: var(--secondary)
+}
