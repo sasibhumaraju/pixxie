@@ -21,5 +21,6 @@
 }
 
 body {
-    background-color: var(--secondary)
+    background-color: var(--secondary);
+    color: var(--primary-text);
 }
