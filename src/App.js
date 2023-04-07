@@ -5,12 +5,12 @@ import './App.css';
 
 function App() {
 
-  const [changeThemeColor] = useChangeTheme('light-theme');
+  const [changeThemeColor] = useChangeTheme();
   
   return (
     <>
    <h1 >Pixxie hi</h1>
-   <button onClick={changeThemeColor}> Switch Theme</button>
+   <button onClick={changeThemeColor }> Switch Theme</button>
    </>
   );
 }
