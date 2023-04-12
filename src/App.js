@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import useChangeTheme from './hooks/ChangeTheme';
 import Login from './components/Login';
+import Auth from './components/Auth';
 import './App.css';
 
 
@@ -12,7 +13,8 @@ function App() {
     <>
    {/* <h1 >Pixxie hi</h1> */}
    <button onClick={changeThemeColor}> Switch Theme</button>
-   <Login></Login>
+  
+   <Auth></Auth>
    </>
   );
 }
