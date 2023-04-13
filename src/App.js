@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import useChangeTheme from './hooks/ChangeTheme';
 import './App.css';
+import Signup from './components/Signup';
 
 
 function App() {
@@ -8,10 +9,9 @@ function App() {
   const [changeThemeColor] = useChangeTheme('light-theme');
   
   return (
-    <>
-   <h1 >Pixxie hi</h1>
-   <button onClick={changeThemeColor}> Switch Theme</button>
-   </>
+    <div className='App'>
+      <Signup/>
+   </div>
   );
 }
 

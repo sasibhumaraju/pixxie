@@ -15,7 +15,7 @@ function useChangeTheme (intialTheme) {
         setTheme('light-theme');
       }
     
-    //   change app theme color
+    //change app theme color
      useEffect( () => {   document.body.className = theme; }, [theme] );
 
      return [changeThemeColor]

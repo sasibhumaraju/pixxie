@@ -1,26 +1,135 @@
 .light-theme {
-
    --primary: rgb(42,133,255);  
    --secondary: rgb(255,255,255);  
    --territory: rgb(249,249,249);  
    --primary-text: rgb(0,0,0);  
    --secondary-text: rgb(171,176,179); 
-   --border:  
-
+   --border: rgb(114,114,114);
 }
 
 .dark-theme {
-
     --primary: rgb(42,133,255);  
     --secondary: rgb(23,24,28);
     --territory: rgb(30,31,35); 
     --primary-text: rgb(255,255,255); 
     --secondary-text: rgb(167,168,172); 
     --border: rgb(238,240,239);
-  
 }
 
 body {
     background-color: var(--secondary);
     color: var(--primary-text);
 }
+
+.labelClass{
+    display: block;
+    margin-bottom: 1em;
+    color: var(--primary-text);
+}
+
+input{
+    display: block;
+    margin-top: 0.3em;
+    border: 0.5px solid var(--border);
+    width: 20em;
+    height: 2.5em;
+    border-radius: 0.5em;
+}
+
+.signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.formImage img{
+    height: 100vh;
+    width: 55vw;
+    border-left: 1px solid var(--border);
+    box-shadow: -5px 8px 10px #888888;
+}
+
+
+.signUpButton{
+    width: 19.2em;
+    height: 2.5em;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.5em;
+    border: none;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#logoImg{
+    height: 10em;
+    width: 10em;
+    margin-bottom: 1em;
+}
+
+#userName{
+    background-image: url(./assets/user.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position-x: 5px;
+    background-position-y:4px;
+    padding-left: 3em;
+}
+
+#email{
+    background-image: url(./assets/mail.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position-x: 5px;
+    background-position-y:4px;
+    padding-left: 3em;
+}
+
+#password{
+    background-image: url(./assets/key.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position-x: 5px;
+    background-position-y:4px;
+    padding-left: 3em;
+}
+
+#existingAccount{
+    font-size: 0.8em;
+}
+
+.googleButton{
+    background-image: url(./assets/google.png);
+    width: 19.2em;
+    height: 2.5em;
+    background-color: var(--secondary);
+    color: var(--primary-text);
+    border-radius: 0.5em;
+    border: 0.6px solid black;
+    margin-top: 1em;
+    font-size: 1em;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position-x: 6px;
+    background-position-y:4px;
+    cursor: pointer;
+}
+
+.loginHighlight{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.orText{
+    display: flex;   
+    flex-direction: row;
+}
+
