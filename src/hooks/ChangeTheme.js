@@ -21,7 +21,7 @@ function useChangeTheme () {
        
       }
     
-    //   change app theme color
+    //change app theme color
      useEffect( () => {   document.body.className = theme; }, [theme] );
 
      return [changeThemeColor]
