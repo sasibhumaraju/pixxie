@@ -1,18 +1,30 @@
 import React from 'react';
 import UseInputState from '../hooks/UseInputState';
-import logo from '../assets/logo.png'
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase-config';
+
 
 function Login () {
     const [email, setEmail, resetEmail] = UseInputState("");
     const [password, setPassword, resetPassword] = UseInputState("");
 
+    const signIn = (e) => {
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+        .then( (userCredentials) => {
+            console.log(userCredentials);
+        })
+        .catch( (error) => {
+            console.log(error);
+        })
+    }
+
     return (
         <div className='login'>
             <div className='login-card'>
-            {/* <div className='logo' > <img  src={logo}></img>     </div>     */}
             <div className='heading'> Sign in to Pixxie </div>
-            <form >
-                <input type='text' placeholder='email' value={email} onChange={setEmail}></input>
+            <form onSubmit={signIn} >
+                <input type='text' placeholder='email or username' value={email} onChange={setEmail}></input>
                 <input type='password' placeholder='password' value={password} onChange={setPassword}></input>
                 <button type='submit' className='submit' >Login</button>
             </form>

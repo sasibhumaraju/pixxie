@@ -76,6 +76,8 @@ body {
 
 /*************** Login Page *********************/
 .login {
+ 
+  min-width: 350px;
   width: 30%;
   height: 100%;
   display: flex;
@@ -185,6 +187,7 @@ body {
 }
 
 .auth img {
-  width: 60%;
+  /* width: 60%; */
+  max-width: 60% ;
   object-fit:contain;
 }
