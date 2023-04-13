@@ -8,7 +8,7 @@ function Auth () {
             <div className="logo">
                 <img src={LogoDark}></img>
             </div>
-            <Login></Login>
+            <Login/>
          </div>
     );
 }
