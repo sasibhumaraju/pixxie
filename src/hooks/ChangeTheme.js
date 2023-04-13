@@ -4,8 +4,8 @@ import {useEffect,useState} from 'react';
 function useChangeTheme () {
 
     //  intial theme
-    const currenttheme = localStorage.getItem("theme")
-    const intialTheme = ( currenttheme == null )? "light-theme" : currenttheme
+    const currentTheme = localStorage.getItem("theme")
+    const intialTheme = ( currentTheme == null )? "light-theme" : currentTheme
     const [theme,setTheme] = useState(intialTheme);
 
     // change current theme state
