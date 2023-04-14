@@ -27,7 +27,7 @@ function Login (props) {
                 <button type='submit' className='submit' >Login</button>
             </form>
             <div className='forgot-passowrd-button'> Forgot Password? </div>
-            <div className='new-account'> Don't have an account? <span style={{color:"#2a85ff", cursor:"pointer"}}>Sign up</span>  </div>
+            <div className='new-account'> Don't have an account? <span onClick={props.handleChange} style={{color:"#2a85ff", cursor:"pointer"}}>Sign up</span>  </div>
             </div>
         </div>
     );

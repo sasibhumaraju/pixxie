@@ -3,7 +3,7 @@ import Signup from "../components/Signup";
 import Login from "../components/Login";
 
 function UseLoginRegisterChange(){
-    const[value,setValue] = useState(true);
+    const[value,setValue] = useState(false);
     const changeValue = () => {
         console.log(value);
             setValue(!value);
