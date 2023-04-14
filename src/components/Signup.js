@@ -17,28 +17,22 @@ function Signup(props){
     }
 
     return(
-    <div>
-        <div className="signUp">
-            <h2 className="registerText">Sign Up</h2>
-            <div className="form">
+    
+        <div className="signup">
+            <div className="signup-card">
+            <div className="heading"> Sign up to Pixxie</div>
+          
                 <form onSubmit={signUp}>
-                    <label className="labelClass">Username
-                    <input id='userName' name="username" type="text" placeholder='Spiderman' value={userName} onChange={setUserName}/>
-                    </label>
-                    <label className="labelClass">Email
-                    <input id='email' name="email" type="text" placeholder='spidy@web.com' value={email} onChange={setEmail}/>
-                    </label>
-                    <label className="labelClass">Password
-                    <input id='password' name="password" type="password" placeholder='••••••••••••••••' value={password} onChange={setPassword}/>
-                    </label>
-                    <button className='signUpButton' type='submit'>Sign Up</button>
+                     <input  name="username" type="text" placeholder='username' value={userName} onChange={setUserName}/>
+                     <input  name="email" type="text" placeholder='email' value={email} onChange={setEmail}/>
+                     <input  name="password" type="password" placeholder='password' value={password} onChange={setPassword}/>
+                     <button className='submit' type='submit'>Sign Up</button>
                 </form>
-                <h4 className="forgotPassword">Forgot Password?</h4>
-                </div>
-                <div className='orText'><h3>or</h3></div>
-                <div className='existingAccount'>Already have an account? <span className='loginHighlight' onClick={props.handleChange}>Login</span></div>
+                {/* <div className="forgot-passowrd-button">Forgot Password?</div> */}
+                <div className='existing-account'>Already have an account?  <span onClick={props.handleChange} style={{color:"#2a85ff", cursor:"pointer"}}>Login</span></div>
         </div>
         </div>
+      
     );
 }
 
