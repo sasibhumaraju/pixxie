@@ -14,7 +14,6 @@ function App() {
     <>
    {/* <h1 >Pixxie hi</h1> */}
    {/* <button onClick={changeThemeColor}> Switch Theme</button> */}
-  
    <Auth></Auth>
    </>
   );

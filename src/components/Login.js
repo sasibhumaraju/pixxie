@@ -3,11 +3,9 @@ import UseInputState from '../hooks/UseInputState';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase-config';
 
-
-function Login () {
+function Login (props) {
     const [email, setEmail, resetEmail] = UseInputState("");
     const [password, setPassword, resetPassword] = UseInputState("");
-
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
@@ -29,7 +27,7 @@ function Login () {
                 <button type='submit' className='submit' >Login</button>
             </form>
             <div className='forgot-passowrd-button'> Forgot Password? </div>
-            <div className='new-account'> Don't have an account? Sign up </div>
+            <div className='new-account'> Don't have an account? <span className='loginHighlight' onClick={props.handleChange}>Sign up</span> </div>
             </div>
         </div>
     );
