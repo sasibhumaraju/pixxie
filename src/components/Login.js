@@ -3,11 +3,9 @@ import UseInputState from '../hooks/UseInputState';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase-config';
 
-
-function Login () {
+function Login (props) {
     const [email, setEmail, resetEmail] = UseInputState("");
     const [password, setPassword, resetPassword] = UseInputState("");
-
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
