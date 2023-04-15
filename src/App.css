@@ -92,7 +92,7 @@ body {
   background-color: var(--territory);
   color: var(--primary-text);
   margin-bottom: 10px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   font-size: var(--small-font-size);
   border: 2px solid gray;
   border-radius: 5px;
@@ -106,7 +106,12 @@ body {
   font-weight: bold;
   font-size: var(--big-font-size);
   font-size: var(--ultra-big-font-size);
-  margin-bottom: 15px;
+  display: none;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  /* color: var(--primary); */
 }
 
 .signup .forgot-passowrd-button {
@@ -185,7 +190,7 @@ body {
   background-color: var(--territory);
   color: var(--primary-text);
   margin-bottom: 10px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   font-size: var(--small-font-size);
   border: 2px solid gray;
   border-radius: 5px;
@@ -195,11 +200,22 @@ body {
   transition: border-color 0.2s;
 }
 
+
+
+.login .password {
+
+}
+
 .login .heading {
   font-weight: bold;
   font-size: var(--big-font-size);
   font-size: var(--ultra-big-font-size);
-  margin-bottom: 15px;
+  display: none;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  /* color: var(--primary); */
 }
 
 .login .forgot-passowrd-button {
@@ -207,6 +223,7 @@ body {
   font-size: var(--small-font-size);
   line-height: 22px;
   cursor: pointer;
+  color: var(--primary);
 }
 
 .login .new-account {
@@ -321,14 +338,24 @@ body {
         width: calc(100% - 40px);
         height: min-content;
         padding: 0px 20px;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         /* margin-top: 100px; */
+       /* background-color: red; */
       
       }
-
+      .login .heading { 
+        display: flex;
+      }
+      .login .login-card {
+       max-width: 250px;
+       width: 100%;
+      
+      }
+      
       
 .login input {
-  padding: 8px 8px;
+   padding: 12px 8px;
    border: 1px solid gray;
    margin-bottom: 8px;
 }
@@ -380,10 +407,16 @@ body {
   /* margin-top: 100px; */
 
 }
-
-
+.signup .signup-card {
+  max-width: 250px;
+  width: 100%;
+ 
+ }
+ .signup .heading { 
+  display: flex;
+}
 .signup input {
-padding: 8px 8px;
+padding: 12px 8px;
 border: 1px solid gray;
 margin-bottom: 8px;
 }

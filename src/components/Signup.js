@@ -20,7 +20,7 @@ function Signup(props){
     
         <div className="signup">
             <div className="signup-card">
-            <div className="heading"> Sign up to Pixxie</div>
+            <div className="heading">  Pixxie</div>
           
                 <form onSubmit={signUp}>
                      <input  name="username" type="text" placeholder='username' value={userName} onChange={setUserName}/>

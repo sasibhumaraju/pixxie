@@ -20,9 +20,9 @@ function Login (props) {
     return (
         <div className='login'>
             <div className='login-card'>
-            <div className='heading'> Sign in to Pixxie </div>
+            <div className='heading'>  Pixxie </div>
             <form onSubmit={signIn} >
-                <input type='text' placeholder='email or username' value={email} onChange={setEmail}></input>
+                <input type='text'  placeholder='email or username' value={email} onChange={setEmail}></input>
                 <input type='password' placeholder='password' value={password} onChange={setPassword}></input>
                 <button type='submit' className='submit' >Login</button>
             </form>
