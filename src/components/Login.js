@@ -22,8 +22,8 @@ function Login (props) {
             <div className='login-card'>
             <div className='heading'>  Login </div>
             <form onSubmit={signIn} >
-                <input type='text'  placeholder='👨‍🔬  email or username' value={email} onChange={setEmail}></input> 
-                <input type='password' placeholder='🔑  password' value={password} onChange={setPassword}></input>
+                <input type='text'  placeholder='email or username' value={email} onChange={setEmail}></input> 
+                <input type='password' placeholder='password' value={password} onChange={setPassword}></input>
                 <button type='submit' className='submit' >Login</button>
             </form>
             <div className='forgot-passowrd-button'> Forgot Password? </div>
