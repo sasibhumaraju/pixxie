@@ -339,7 +339,7 @@ body {
      .login {
        min-width: 0%;   
        width: calc(100% - 40px);    
-       height: min-content;    
+       /* height: min-content;     */
        padding: 0px 20px;   
        justify-content: flex-start;    
        align-items: center;   
@@ -349,6 +349,8 @@ body {
 
      .login .heading { 
        display: flex;  
+       border-bottom: 2px solid gray;
+ height: 90px;
      }
 
 
@@ -415,7 +417,7 @@ body {
  padding: 0px 20px;
  justify-content: flex-start;
  /* margin-top: 100px; */
- height: min-content;    
+ /* height: min-content;     */
 
 }
 .signup .signup-card {
@@ -425,6 +427,8 @@ body {
 }
 .signup .heading { 
  display: flex;
+ border-bottom: 2px solid gray;
+ height: 90px;
 }
 .signup input {
 padding: 12px 8px;
