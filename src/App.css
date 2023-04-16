@@ -379,7 +379,7 @@ body {
      border: 1.2px solid gray;
      margin-bottom: 8px;
      color: black;
-     background-color: var(--territory);
+     background-color: var(--secondary);
    }
 
 
@@ -458,7 +458,7 @@ padding: 12px 8px;
 border: 1.2px solid gray;
 margin-bottom: 8px;
 color: black;
-background-color: var(--territory);
+background-color: var(--secondary);
 
 }
 .signup .new-account {
