@@ -2,6 +2,7 @@ import React from 'react';
 import UseInputState from '../hooks/UseInputState';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase-config';
+import GetSeasonIcon from '../util/GetSeasonIcon';
 
 function Login (props) {
     const [email, setEmail, resetEmail] = UseInputState("");
@@ -20,7 +21,7 @@ function Login (props) {
     return (
         <div className='login'>
             <div className='login-card'>
-            <div className='logo-auth'>Pixxie 🎃</div>    
+            <div className='logo-auth'>Pixxie {GetSeasonIcon()}</div>    
             <div className='heading'>  Login </div>
             <form onSubmit={signIn} >
                 <input type='text'  placeholder='email or username' value={email} onChange={setEmail}></input> 

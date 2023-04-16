@@ -1,5 +1,6 @@
 import UseInputState from "../hooks/UseInputState";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import GetSeasonIcon from "../util/GetSeasonIcon";
 function Signup(props){
     const [email,setEmail,resetEmail] = UseInputState("");
     const [userName,setUserName,resetUserName] = UseInputState("");
@@ -20,7 +21,7 @@ function Signup(props){
     
         <div className="signup">
             <div className="signup-card">
-            <div className='logo-auth'>Pixxie 🎃</div>  
+            <div className='logo-auth'>Pixxie {GetSeasonIcon()}</div>  
             <div className="heading">  Sign Up</div>
           
                 <form onSubmit={signUp}>
