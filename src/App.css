@@ -376,7 +376,7 @@ body {
      
    .login input {
      padding: 12px 8px;
-     border: 1.2px solid gray;
+     border: 1px solid gray;
      margin-bottom: 8px;
      color: black;
      background-color: var(--secondary);
@@ -455,7 +455,7 @@ body {
 }
 .signup input {
 padding: 12px 8px;
-border: 1.2px solid gray;
+border: 1px solid gray;
 margin-bottom: 8px;
 color: black;
 background-color: var(--secondary);
