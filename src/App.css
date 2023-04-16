@@ -406,8 +406,9 @@ body {
       /* background: linear-gradient(to bottom, #FFFFFF 80%, var(--primary) 20%),
       repeating-linear-gradient(45deg, #FF0000, #FF0000 10px, #0000FF 10px, #0000FF 20px); */
   background:linear-gradient(305deg, 
-  white 50% ,
-  rgba(42, 133, 255,0.1) 50%
+  rgba(42, 133, 255,0.1) 50%,
+  white 50% 
+
 );
      }
 
