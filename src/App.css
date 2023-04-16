@@ -329,7 +329,7 @@ body {
   transform: rotate(180deg); 
 }
 
-
+.logo-auth { display: none; }
 
   /* Styles for mobile devices */
   @media (max-width: 767px) {
