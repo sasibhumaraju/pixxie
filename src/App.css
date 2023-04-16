@@ -402,7 +402,7 @@ body {
      .auth {
        flex-direction: column-reverse;
       justify-content: center;
-      /* background: linear-gradient(to top right, rgba(42, 133, 255,0.2) , white); */
+      background: linear-gradient(to top right, rgba(42, 133, 255,0.2) , white);
      }
 
 
