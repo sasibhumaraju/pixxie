@@ -24,9 +24,9 @@ function Signup(props){
             <div className="heading">  Sign Up</div>
           
                 <form onSubmit={signUp}>
-                     <input  name="username" type="text" placeholder='👨  username' value={userName} onChange={setUserName}/>
-                     <input  name="email" type="text" placeholder='📧  email' value={email} onChange={setEmail}/>
-                     <input  name="password" type="password" placeholder='🔑  password' value={password} onChange={setPassword}/>
+                     <input  name="username" type="text" placeholder='username' value={userName} onChange={setUserName}/>
+                     <input  name="email" type="text" placeholder='email' value={email} onChange={setEmail}/>
+                     <input  name="password" type="password" placeholder='password' value={password} onChange={setPassword}/>
                      <button className='submit' type='submit'>Sign Up</button>
                 </form>
                 {/* <div className="forgot-passowrd-button">Forgot Password?</div> */}

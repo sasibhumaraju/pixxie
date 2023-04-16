@@ -202,6 +202,8 @@ body {
 
 
 
+
+
 .login .password {
 
 }
@@ -328,7 +330,10 @@ body {
   align-items: flex-end;
   transform: rotate(180deg); 
 }
-
+span {
+  padding: 0px;
+  margin: 0px;
+}
 .logo-auth { display: none; }
 
   /* Styles for mobile devices */
@@ -395,7 +400,7 @@ body {
      border: 2px solid gray;
      margin-bottom: 8px;
      color: black;
-     background-color: var(--secondary);
+     background-color: var(--territory); 
    }
 
 
@@ -474,7 +479,7 @@ padding: 12px 8px;
 border: 2px solid gray;
 margin-bottom: 8px;
 color: black;
-background-color: var(--secondary);
+background-color: var(--territory);
 
 }
 .signup .new-account {
