@@ -291,14 +291,13 @@ body {
  flex-direction: row;
 }
 
-.auth .logo {
-
+.auth .logo { 
  width: calc(70% - 60px); 
- padding: 0px 30px; 
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: var(--primary);
+ padding: 0px 30px;  
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ background-color: var(--primary); 
 }
 
 .auth img {
@@ -386,14 +385,14 @@ body {
 
 
      .login .login-card { 
-      max-width: 300px;   
+      max-width: 270px;   
       width: 100%;   
      }
      
      
    .login input {
      padding: 12px 8px;
-     border: 1.2px solid gray;
+     border: 2px solid gray;
      margin-bottom: 8px;
      color: black;
      background-color: var(--secondary);
@@ -455,7 +454,7 @@ body {
 
 }
 .signup .signup-card {
- max-width: 300px;
+ max-width: 270px;
  width: 100%;
 
 }
@@ -472,7 +471,7 @@ body {
 }
 .signup input {
 padding: 12px 8px;
-border: 1.2px solid gray;
+border: 2px solid gray;
 margin-bottom: 8px;
 color: black;
 background-color: var(--secondary);
