@@ -20,6 +20,7 @@ function Login (props) {
     return (
         <div className='login'>
             <div className='login-card'>
+            <div className='logo-auth'>Pixxie 🎃</div>    
             <div className='heading'>  Login </div>
             <form onSubmit={signIn} >
                 <input type='text'  placeholder='email or username' value={email} onChange={setEmail}></input> 

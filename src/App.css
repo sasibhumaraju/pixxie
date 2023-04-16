@@ -107,11 +107,11 @@ body {
  font-size: var(--big-font-size);
  font-size: var(--ultra-big-font-size);
  display: flex;
- align-self: center;
- justify-content: center;
+ /* align-self: center; */
+ justify-content: flex-start;
  align-items: center;
- margin-bottom: 50px;
- margin-top: 50px;
+ margin-bottom: 20px;
+
  /* color: var(--primary); */
 }
 
@@ -212,10 +212,10 @@ body {
  font-size: var(--ultra-big-font-size);
  display: flex;
  align-self: center;
- justify-content: center;
+ justify-content: flex-start;
  align-items: center;
- margin-bottom: 50px;
- margin-top: 50px;
+ margin-bottom: 20px;
+ 
  /* color: var(--primary); */
 }
 
@@ -334,8 +334,19 @@ body {
        /* width: 0%; */
        position: absolute;
        bottom: 0px;
+       display: none;
      }
-
+     .logo-auth {
+      color: var(--primary);
+      font-size:30px;
+      font-weight: 800;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      /* background-color: red; */
+  }
      .login {
        min-width: 0%;   
        width: calc(100% - 40px);    
@@ -348,9 +359,12 @@ body {
 
 
      .login .heading { 
-       display: flex;  
-       border-bottom: 2px solid gray;
- height: 90px;
+       /* display: flex;  
+       border-top: 2px solid gray;
+        height: 90px;
+        justify-content: center; */
+        /* margin-bottom: 10px;
+        margin-top: 50px; */
      }
 
 
@@ -388,7 +402,7 @@ body {
      .auth {
        flex-direction: column-reverse;
       justify-content: center;
-      /* background: linear-gradient(to top right, rgba(42, 133, 255,1) , white); */
+      /* background: linear-gradient(to top right, rgba(42, 133, 255,0.2) , white); */
      }
 
 
@@ -425,10 +439,16 @@ body {
  width: 100%;
 
 }
+
+
+
 .signup .heading { 
- display: flex;
- border-bottom: 2px solid gray;
+ /* display: flex;
+ border-top: 2px solid gray;
  height: 90px;
+ justify-content: center;
+ margin-bottom: 15px;
+ margin-top: 50px; */
 }
 .signup input {
 padding: 12px 8px;

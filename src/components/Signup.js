@@ -20,6 +20,7 @@ function Signup(props){
     
         <div className="signup">
             <div className="signup-card">
+            <div className='logo-auth'>Pixxie 🎃</div>  
             <div className="heading">  Sign Up</div>
           
                 <form onSubmit={signUp}>
